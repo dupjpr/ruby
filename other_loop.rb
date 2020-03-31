@@ -1,6 +1,6 @@
 puts "write a numbre: "
 num = gets.chomp.to_i
-num.times do |i+2|
+num.times do |i|
     puts "this number is #{i+1}"
 end
 
