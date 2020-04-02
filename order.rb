@@ -8,7 +8,7 @@ def order(a, b = false)
 
     # b == true ? a.sort.reverse : a.sort
     b ? a.sort.reverse : a.sort
-
+b
 
 end
 a = [2,4,3,1]
