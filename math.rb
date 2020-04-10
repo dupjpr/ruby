@@ -1,12 +1,12 @@
 def fizz_buzz(a)
     if a % 3 == 0 && a % 5 == 0
-        puts "fizzbuzz"
+        "fizzbuzz"
     elsif a % 5 == 0
-        puts "buzz" 
+        "buzz" 
     elsif a % 3 == 0
-        puts "fizz"
+        "fizz"
     else
-        puts "try egain"
+        a
     
     end
 
