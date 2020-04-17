@@ -1,3 +1,1 @@
-primera línea
-segunda línea
-tercera línea
+my first line record with command line

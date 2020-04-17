@@ -1,4 +1,9 @@
 def defaults(a)
+if test
+
+
+
+
  
     if a.has_key?(:temperature) == true && (a.has_key?(:altitude) || a.has_key?(:pressure)) == false
         a[:altitude] = 12000
@@ -30,8 +35,6 @@ def defaults(a)
         puts a
     end
     
- 
-
 end
 
 
