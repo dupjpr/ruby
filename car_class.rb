@@ -1,26 +1,67 @@
 class Car
-    
-    attr_accessor :accelerate, :brake
-
-    def initialize(accelerate, brake)
-       @accelerate = accelerate
-       @brake = brake
+    attr_reader :velocity
+  
+    def initialize
+      @velocity = 0
     end
-
-    def machine
-        velocity = (@accelerate + 1) - @brake
-        
-        "The velocity is #{velocity }."
-        
+  
+    def accelerate(units = 1)
+       @velocity += units
     end
-   
-
+  
+    def break(units = 1)
+      if @velocity - units >= 0
+         @velocity -= units
+      else
+        puts 'Value is out of range'
+      end
+    end
 
 end
 
 
-car1 = Car.new(0,2)
-puts car1.machine
+car= Car.new
+car.accelerate
+puts car.velocity
+car.accelerate(2)
+puts car.velocity
+car.accelerate(4)
+puts car.velocity
+car.accelerate(6)
+puts car.velocity
+car.break
+puts car.velocity
+
+  
+
+
+
+
+
+
+# class Car
+    
+#     attr_accessor :accelerate, :brake
+
+#     def initialize(accelerate, brake)
+#        @accelerate = accelerate
+#        @brake = brake
+#     end
+
+#     def machine
+#         velocity = (@accelerate + 1) - @brake
+        
+#         "The velocity is #{velocity }."
+        
+#     end
+   
+
+
+# end
+
+
+# car1 = Car.new(0,2)
+# puts car1.machine
 
 
 
