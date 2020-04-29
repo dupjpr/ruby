@@ -4,9 +4,9 @@ class String
         a = self.delete(" ")
         if a == a.reverse
 
-            puts "ok"
+            true
         else
-            puts "think"
+            false
         end
     end
 
